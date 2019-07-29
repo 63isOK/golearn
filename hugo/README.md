@@ -8,7 +8,10 @@
 
 # 源码分析
 
-分析脚程：
+直接分析:
+- [0.56.1](/hugo/0.56.1/README.md) 这个是基于20190729的版本 e5f960245938d8d8b4e99f312e9907f8d3aebf7a
+
+按提交分析脚程：
 - [第1个pr,添加项目介绍文件,第一个最小实现](/hugo/source/1.md),这是第一次主干更新,实现了一个hugo的最小集
 - [第2个pr,将配置和front matter的格式由json改为yaml](/hugo/source/2.md),将配置和front matter的默认格式改为yaml
 - [第3个pr,格式支持toml/yaml/json](/hugo/source/3.md),配置文件支持多种格式,启动参数支持长短格式,部分启动参数的功能也做了添加
