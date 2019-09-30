@@ -141,7 +141,7 @@
     golearn被认为是仓库
     closed被显示指定为issues的状态
 
-- 对于POST/PATHC/PUT/DELETE请求，不再url中的参数，需要丢到json中
+- 对于POST/PATHC/PUT/DELETE请求，不在url中的参数，需要丢到json中
 - 此时http头中的Content-Type要指定为'application/json'
 
     curl -i -u 63isOK:zhuwenkai001 -d '{"scopes":["public_repo"]}' https://api.github.com/authorizations
