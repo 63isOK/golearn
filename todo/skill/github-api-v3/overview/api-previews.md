@@ -1,0 +1,120 @@
+# api预览
+
+- 说白了，这些api都是一个github官方正式api的预发布
+- 预览阶段，api的特征都是可能会有一定修改的，最后成为github官方api时，会通过blog宣布
+- 如果要提前使用这些预览api，需要在请求头里自定义资源类型(Accept)
+- 下面每个预览的特征文档都会指明各自的资源类型
+
+预览api：
+- Migrations
+  - 可以下载仓库(无论是个人的还是组织的)用于review/backup/迁移数据到github企业服务
+  - 资源类型：wyandotte-preview
+- Source import
+  - 使用github导入器(指定api版本)导入源码仓库到github
+  - barred-rock-preview
+- Enhanced deployments
+  - 增强型部署(通过更多信息和更高的颗粒度来控制部署)
+  - ant-man-preview
+- Reactions
+  - 管理对commit/issues/comment的反应(说白了就是表情评价)
+  - mockingbird-preview
+- Timeline
+  - 获取issue/pr的事件列表
+  - mockingbird-preview
+- Pages
+  - 获取github page站点的更多信息
+  - mister-fantastic-preview
+- Integrations
+  - 通过api管理集成
+  - machine-man-preview
+- Projects
+  - 管理projects
+  - nertia-preview
+- Commit search
+  - 搜索commit
+  - cloak-preview
+- Community profile metrics
+  - 公共仓库的社区健康度
+  - black-panther-preview
+- User blocking
+  - 用户屏蔽其他用户，组织屏蔽用户
+  - giant-sentry-fist-preview
+- Repository topics
+  - 仓库主题列表
+  - mercy-preview
+- Codes of conduct
+  - 显示所有的行为守则，或是显示当前仓库的行为守则
+  - scarlet-witch-preview
+- Nested teams
+  - team payload中包含的嵌套team内容
+  - hellcat-preview
+- Repository transfer
+  - 将仓库转移给用户或组织
+  - nightshade-preview
+- Add lock reason
+  - 锁住一个issue时可以添加一个原因说明
+  - sailor-v-preview
+- Organization invitations
+  - 通过api可以邀请新用户加入某个组织
+  - dazzler-preview
+- Team discussions
+  - 现在可以利用api来管理team讨论和team讨论的注释
+  - echo-preview
+- Label emoji, search, and descriptions
+  - 在标签中可以使用表情，也可以给标签添加描述，也可搜索一个仓库中的标签
+  - symmetra-preview
+- Require signed commits
+  - 可以利用api管理某些设置(在保护分支上提交需要签名(用户名和邮箱要指定))
+  - zzzax-preview
+- Require multiple approving reviews
+  - 需要多个审阅这批准通过
+  - luke-cage-preview
+- Retrieve hovercard information
+  - 从某人的名片中获取信息
+  - hagar-preview
+- Check runs and check suites API
+  - 允许github app对仓库代码做额外的检查(ci和github action都属于这类)
+  - antiope-preview
+- Project card details
+  - issue事件和issue时间线事件会通过project_card字段返回项目相关的事件
+  - starfox-preview
+- GitHub App Manifests
+  - 利用github 应用清单，可以创建预配置的github app
+  - fury-preview
+- Deployment statuses
+  - 现在部署状态可以用"in_progress"和"queued"
+  - flash-preview
+- Repository creation permissions
+  - 现在可以配置组织人员是否可以创建仓库，或创建哪种仓库
+  - surtur-preview
+- Content attachments
+  - 现在可以利用github的url和附件api来指定更多信息
+  - corsair-preview
+- Interaction restrictions for repositories and organizations
+  - 允许你临时性限制交互，eg：注释/开issues/pr，如果启用，那只有用户组里的用户可以进行交互
+  - sombra-preview
+- Draft pull requests
+  - 可以利用pr草稿api来将pr设置为草稿状态
+  - shadow-cat-preview
+- Enable and disable Pages
+  - 可以开启或不起用page功能
+  - switcheroo-preview
+- List branches or pull requests for a commit
+  - 利用提交api可以显示分支或pr
+  - groot-preview
+- Uninstall a GitHub App
+  - github app的所有者，可以利用apps api卸载app
+  - gambit-preview
+- Enable or disable vulnerability alerts for a repository
+  - 通过repos api来开启或关闭漏洞报警
+  - dorian-preview
+- Update a pull request branch
+  - 更新pr分支
+  - lydian-preview
+- Enable or disable automated security fixes
+  - 可以开启或关闭自动安全修复
+  - london-preview
+- Create and use repository templates
+  - 可以利用api去创建一个模版仓库或是使用模版仓库，或者检测一个仓库是不是模版仓库
+  - baptiste-preview
+  - 2019.06.06 github推出模版仓库，07.05就推出了相关的api,真是强大表现
