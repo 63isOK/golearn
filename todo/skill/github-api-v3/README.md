@@ -15,3 +15,5 @@
   - [通知](/todo/skill/github-api-v3/activity/notifications.md)，新评论会通知到指定用户，也可以将消息标记为已读
   - [打星](/todo/skill/github-api-v3/activity/starring.md)，github打星功能，和点赞是一个意思
   - [watch](/todo/skill/github-api-v3/activity/watching.md)，watch他人项目，可接收对应的通知消息
+- check api, 通过这些api来发送集成运行的结果(除了编译的成功失败，还可以包含其他信息)
+  - 这些api是给github app使用的，eg：travis ci，github action也用到了这些api
